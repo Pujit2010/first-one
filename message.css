@@ -1,0 +1,32 @@
+body{
+    margin: 0;
+    overflow: hidden;
+    background: linear-gradient(135deg, #dd4348, #e43d0f);
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+h1{
+    font-size: 125px;
+    color: white;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+    z-index: 2;
+    text-align: center;
+}
+.sprinkle{
+    position: absolute;
+    width: 8px;
+    height: 14px;
+    border-radius: 4px;
+    animation: fall linear infinite;
+}
+@keyframes fall{
+    0%{
+        transform: translateY(-10vh) rotate(0deg);
+    }
+    100%{
+        transform: translateY(110vh) rotate(360deg);
+    }
+}

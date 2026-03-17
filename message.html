@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Happy Birthday!</title>
+<link rel="stylesheet" href="message.css">
+</head>
+<body>
+
+<h1>🎉 Happy Birthday! 🎂</h1>
+
+<script>
+const colors = ["#ff4d4d","#ffd24d","#4dd2ff","#7dff7d","#ff66ff","#ffffff"];
+
+for (let i = 0; i < 120; i++) {
+    const sprinkle = document.createElement("div");
+    sprinkle.classList.add("sprinkle");
+
+    sprinkle.style.left = Math.random() * 100 + "vw";
+    sprinkle.style.background = colors[Math.floor(Math.random()*colors.length)];
+    sprinkle.style.animationDuration = (Math.random()*3 + 2) + "s";
+    sprinkle.style.opacity = Math.random();
+
+    document.body.appendChild(sprinkle);
+}
+</script>
+
+</body>
+</html>
